@@ -1,0 +1,1 @@
+É necessário a criação de um interceptador entre a estrutura de dados e o cliente, para que o tratamento de erros possa ser realizado adequadamente.
