@@ -1,6 +1,6 @@
-package pilhas;
+package structures;
 
-public class PilhaGenerica10 {
+public class Pilha {
 
     private int[] array;
     private int topo;

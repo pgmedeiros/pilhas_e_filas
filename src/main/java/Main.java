@@ -1,25 +1,21 @@
-import pilhas.PilhaGenerica10;
+import structures.Fila;
 
 public class Main {
     public static void main(String[] args) {
+        Fila fila = new Fila(4);
+        fila.push(1);
+        fila.push(2);
+        fila.push(3);
+        fila.push(4);
 
-        PilhaGenerica10 pilha = new PilhaGenerica10();
-        pilha.create(10);
-        pilha.push(1);
-        pilha.push(1);
-        pilha.push(1);pilha.push(1);pilha.push(1);pilha.push(1);pilha.push(1);pilha.push(1);
-        pilha.push(1);pilha.push(1);
 
-        System.out.println(pilha.isFull());
-        System.out.println(pilha.position());
+        System.out.println(fila.pull());
+        System.out.println(fila.pull());
+        System.out.println(fila.pull());
+        System.out.println(fila.pull());
+        System.out.println(fila.pull());
 
-        try{
-            pilha.push(2);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
 
-        System.out.println(pilha.isFull());
-        //MESMO DANDO ERRO, ELE ALTERA A POSIÇÃO, ISSO QUER DIZER OQ?
+
     }
 }
